@@ -14,7 +14,7 @@ $stripe = array(
 require_once $_LIBS . 'stripe/vendor/autoload.php';
 \Stripe\Stripe::setApiKey($stripe['secret_key']);
 
-$endpoint_secret = 'whsec_TCNabSBBJwdHCmjypb3enIsxRjgQFyiS';
+
 
 $payload = @file_get_contents('php://input');
 $event = null;
